@@ -1,0 +1,69 @@
+{
+  "description": "Add altitude to payload.",
+  "nodes": [
+    {
+      "id": "S1ocwKOrq",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A low power payload.",
+      "id": "B1gocwY_Bq",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-lpp"
+    },
+    {
+      "description": "Altitude.",
+      "id": "Hkbi9PYOBq",
+      "label": "Alt",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update.",
+      "id": "Bk4i5wK_Hc",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "B1BoqvKuSc",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Channel.",
+      "id": "rk8scwK_Hq",
+      "label": "CHL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
+}

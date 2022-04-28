@@ -1,0 +1,91 @@
+{
+  "description": "Add accelerometer data to payload.",
+  "nodes": [
+    {
+      "id": "SysiRUdSc",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A low power payload.",
+      "id": "Bk93R8OBc",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-lpp"
+    },
+    {
+      "description": "Acceleration in X-axis.",
+      "id": "B16RQYdSq",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Acceleration in Y-axis.",
+      "id": "SJM1Et_S5",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Acceleration in Z-axis.",
+      "id": "BJmJEK_H5",
+      "label": "Z",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update.",
+      "id": "ByAJ4FdH5",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "HyiONFdHq",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Channel.",
+      "id": "HJDHSFur5",
+      "label": "CHL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
+}
