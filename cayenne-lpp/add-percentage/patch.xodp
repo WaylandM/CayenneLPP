@@ -1,2 +1,69 @@
 {
+  "description": "Add percentage to payload.",
+  "nodes": [
+    {
+      "id": "SJo4U8tS5",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A low power payload.",
+      "id": "r1giEU8KB9",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-lpp"
+    },
+    {
+      "description": "Percentage",
+      "id": "H1-oEIIYrc",
+      "label": "%",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update.",
+      "id": "BJfoN8UtH5",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "rJmsNULKrq",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Channel. Uniquely identifies each sensor in the device across frames.",
+      "id": "ryVjE88KBq",
+      "label": "CHL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
 }
