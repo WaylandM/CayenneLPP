@@ -77,7 +77,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Channel.",
+      "description": "Channel. Uniquely identifies each sensor in the device across frames.",
       "id": "HJDHSFur5",
       "label": "CHL",
       "position": {

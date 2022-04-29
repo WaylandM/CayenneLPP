@@ -1,2 +1,69 @@
 {
+  "description": "Add generic sensor to payload.",
+  "nodes": [
+    {
+      "id": "ByHFl8FH5",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A low power payload.",
+      "id": "SklBYl8tH5",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-lpp"
+    },
+    {
+      "description": "Input from generic sensor.",
+      "id": "ByWHFl8FB5",
+      "label": "IN",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update.",
+      "id": "SyMHYlLtSq",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "SJmSKlUtBq",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Channel. Uniquely identifies each sensor in the device across frames.",
+      "id": "HyNrtx8Fr9",
+      "label": "CHL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
 }

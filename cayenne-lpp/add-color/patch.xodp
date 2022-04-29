@@ -1,8 +1,8 @@
 {
-  "description": "Add concentration to payload.",
+  "description": "Add color to payload.",
   "nodes": [
     {
-      "id": "H1Mz0mYSc",
+      "id": "ryDDcXtH9",
       "position": {
         "units": "slots",
         "x": 0,
@@ -12,7 +12,7 @@
     },
     {
       "description": "A low power payload.",
-      "id": "rJxfGRQKH9",
+      "id": "SJevPc7YSq",
       "label": "LPP",
       "position": {
         "units": "slots",
@@ -22,19 +22,8 @@
       "type": "@/input-lpp"
     },
     {
-      "description": "Concentration",
-      "id": "ByWfzCmtHq",
-      "label": "Conc",
-      "position": {
-        "units": "slots",
-        "x": 2,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-number"
-    },
-    {
       "description": "Update.",
-      "id": "H1zzGRQKHc",
+      "id": "rkzDwcQFS5",
       "label": "UPD",
       "position": {
         "units": "slots",
@@ -45,7 +34,7 @@
     },
     {
       "description": "Pulse on completion.",
-      "id": "rk7fGA7FS5",
+      "id": "rkQvv9XKBc",
       "label": "Done",
       "position": {
         "units": "slots",
@@ -56,7 +45,7 @@
     },
     {
       "description": "Channel. Uniquely identifies each sensor in the device across frames.",
-      "id": "Bk4zM0XYHc",
+      "id": "r1VPDcmtBq",
       "label": "CHL",
       "position": {
         "units": "slots",
@@ -64,6 +53,17 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Color",
+      "id": "HJH_57tr9",
+      "label": "Color",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/color/input-color"
     }
   ]
 }

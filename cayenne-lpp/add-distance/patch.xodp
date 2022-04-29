@@ -1,2 +1,69 @@
 {
+  "description": "Add distance to payload.",
+  "nodes": [
+    {
+      "id": "BJ6i3VKr9",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A low power payload.",
+      "id": "Skxpi2VKBc",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-lpp"
+    },
+    {
+      "description": "Distance.",
+      "id": "ry-TjnVtS9",
+      "label": "Dist",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update.",
+      "id": "B1z6onNtrq",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "HJQaj2Etr5",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Channel. Uniquely identifies each sensor in the device across frames.",
+      "id": "H1E6oh4tr5",
+      "label": "CHL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
 }
