@@ -6,9 +6,7 @@ node {
         if (!isInputDirty<input_UPD>(ctx))
             return;
         auto lpp = getValue<input_LPP>(ctx);
-        lpp->addTemperature(
-            getValue<input_CHL>(ctx),
-            getValue<input_Temp>(ctx));
+        emitValue<output_Size>(ctx, lpp->getSize());
         emitValue<output_Done>(ctx, 1);
     }
 }
