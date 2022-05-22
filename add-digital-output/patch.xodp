@@ -1,4 +1,5 @@
 {
+  "description": "Add digital output to payload.",
   "nodes": [
     {
       "id": "SykYiVtS9",

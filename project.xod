@@ -1,3 +1,6 @@
 {
-  "name": "cayenne-lpp"
+  "description": "Cayenne Low Power Payload with Extended Data Types. CayenneLPP format is an efficient way to send sensor data over low bit rate connection, like LoRa. Wraps https://github.com/ElectronicCats/CayenneLPP. ",
+  "license": "MIT",
+  "name": "cayenne-lpp",
+  "version": "0.0.2"
 }
