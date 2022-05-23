@@ -1,4 +1,5 @@
 #pragma XOD require "https://github.com/ElectronicCats/CayenneLPP"
+#pragma XOD require "https://github.com/bblanchon/ArduinoJson"
 
 #include <CayenneLPP.h>
 
