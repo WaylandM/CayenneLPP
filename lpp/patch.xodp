@@ -22,17 +22,14 @@
       "type": "xod/patch-nodes/output-self"
     },
     {
-      "boundLiterals": {
-        "__out__": "100d"
-      },
-      "id": "Hy8yEvdS9",
+      "id": "rydDt05vc",
       "label": "Size",
       "position": {
         "units": "slots",
         "x": 0,
         "y": 0
       },
-      "type": "xod/patch-nodes/input-byte"
+      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

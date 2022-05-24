@@ -1,0 +1,215 @@
+{
+  "comments": [
+    {
+      "content": "expected[] = {0x05,0x67,0xFF,0xD1};",
+      "id": "ryS5fcqw5",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "HkESJ5qDq",
+      "input": {
+        "nodeId": "HJpVJccP5",
+        "pinKey": "ryxb0FAYrq"
+      },
+      "output": {
+        "nodeId": "rkzrJcqvq",
+        "pinKey": "Bk6wOfdSq"
+      }
+    },
+    {
+      "id": "H1Swkc5v5",
+      "input": {
+        "nodeId": "S1gw15qwc",
+        "pinKey": "H1lozBKcvq"
+      },
+      "output": {
+        "nodeId": "rkzrJcqvq",
+        "pinKey": "Bk6wOfdSq"
+      }
+    },
+    {
+      "id": "ryWOy9cw5",
+      "input": {
+        "nodeId": "Hypw195w5",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1gw15qwc",
+        "pinKey": "rJXErK5wc"
+      }
+    },
+    {
+      "id": "HkOOk9cv9",
+      "input": {
+        "nodeId": "S1gw15qwc",
+        "pinKey": "rJbizBY9Dc"
+      },
+      "output": {
+        "nodeId": "HJpVJccP5",
+        "pinKey": "B1XZCKAFBq"
+      }
+    },
+    {
+      "id": "SkkKdqqP9",
+      "input": {
+        "nodeId": "Sko__5cwq",
+        "pinKey": "rJlEnb_KU9"
+      },
+      "output": {
+        "nodeId": "rkzrJcqvq",
+        "pinKey": "Bk6wOfdSq"
+      }
+    },
+    {
+      "id": "rkWt_q9Dq",
+      "input": {
+        "nodeId": "Sko__5cwq",
+        "pinKey": "H1ZEhWOt8q"
+      },
+      "output": {
+        "nodeId": "S1gw15qwc",
+        "pinKey": "S1zoMHtcv9"
+      }
+    },
+    {
+      "id": "ByMrYcqw9",
+      "input": {
+        "nodeId": "B15EYqqv5",
+        "pinKey": "B1JtaTtpt"
+      },
+      "output": {
+        "nodeId": "Sko__5cwq",
+        "pinKey": "HkGE2Z_tL9"
+      }
+    },
+    {
+      "id": "By6HFc5P9",
+      "input": {
+        "nodeId": "Bk5SYccwc",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B15EYqqv5",
+        "pinKey": "BJssTaFTt"
+      }
+    },
+    {
+      "id": "Skp8K95D9",
+      "input": {
+        "nodeId": "HJpVJccP5",
+        "pinKey": "SkG-RY0Frq"
+      },
+      "output": {
+        "nodeId": "BJFLtqqD9",
+        "pinKey": "HJU8CE2lW"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "SkG-RY0Frq": "Continuously",
+        "SyVWAtCFS5": "05h",
+        "rJb-0KAFH5": "-4.7"
+      },
+      "id": "HJpVJccP5",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "@/add-temperature"
+    },
+    {
+      "boundLiterals": {
+        "Hy8yEvdS9": "20d",
+        "rydDt05vc": "20"
+      },
+      "id": "rkzrJcqvq",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/lpp"
+    },
+    {
+      "boundLiterals": {
+        "B1f9yRqD5": "40"
+      },
+      "id": "S1gw15qwc",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "@/get-payload"
+    },
+    {
+      "id": "Hypw195w5",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Sko__5cwq",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 4
+      },
+      "type": "@/reset"
+    },
+    {
+      "id": "B15EYqqv5",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 5
+      },
+      "type": "wayland/memory-free/sram-free"
+    },
+    {
+      "id": "Bk5SYccwc",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "BJFLtqqD9",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/core/clock"
+    }
+  ]
+}
