@@ -6,9 +6,9 @@ node {
         if (!isInputDirty<input_UPD>(ctx))
             return;
         auto lpp = getValue<input_LPP>(ctx);
-        lpp->addLuminosity(
+        lpp->addVoltage(
             getValue<input_CHL>(ctx),
-            getValue<input_Lum>(ctx));
+            getValue<input_Volt>(ctx));
         emitValue<output_Done>(ctx, 1);
     }
 }

@@ -6,7 +6,6 @@ node {
     char* payload;
     size_t cap;
 
-
     void evaluate(Context ctx) {
         if (isSettingUp()) {
             cap = getValue<input_Size>(ctx) * 2 + 1;
@@ -26,7 +25,5 @@ node {
             emitValue<output_PYLD>(ctx, XString(&view));
             emitValue<output_Done>(ctx, 1);
         }
-
-
     }
 }

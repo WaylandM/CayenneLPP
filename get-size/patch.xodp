@@ -44,18 +44,15 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "boundLiterals": {
-        "__in__": "00d"
-      },
-      "description": "Size of buffer.",
-      "id": "rJ_O2Pt89",
+      "description": "Size of payload.",
+      "id": "HJCb_9jPq",
       "label": "Size",
       "position": {
         "units": "slots",
         "x": 0,
         "y": 2
       },
-      "type": "xod/patch-nodes/output-byte"
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }
