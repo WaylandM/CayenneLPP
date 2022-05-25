@@ -1,5 +1,5 @@
 {
-  "description": "Reset the buffer.",
+  "description": "Reset (empty) the LPP buffer.",
   "nodes": [
     {
       "id": "Hy43buY8c",

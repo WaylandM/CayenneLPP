@@ -44,18 +44,15 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "boundLiterals": {
-        "__in__": "00d"
-      },
-      "description": "Error code: 00h=OK; 01h=overflow; 02h=unknown error.",
-      "id": "H1X_mQ_YU5",
+      "description": "Error code: 0=OK; 1=overflow; 2=unknown error.",
+      "id": "HJgkY6iwc",
       "label": "Error",
       "position": {
         "units": "slots",
         "x": 0,
         "y": 2
       },
-      "type": "xod/patch-nodes/output-byte"
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }

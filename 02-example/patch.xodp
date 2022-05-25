@@ -1,0 +1,403 @@
+{
+  "comments": [
+    {
+      "content": "\n# **A**",
+      "id": "r1hWspsv9",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 1
+      }
+    },
+    {
+      "content": "\n# **B**",
+      "id": "S1xEjajP5",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 0
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 1
+      }
+    },
+    {
+      "content": "# Detection of LPP buffer overload.\n\n* A low power payload (LPP) is created with a size of 4 bytes.\n\n* Firing tweak-pulse **A** empties the LPP before adding a voltage measurement. A voltage measurement occupies 4 bytes, so fits inside the LPP buffer.\n\n* Firing tweak-pulse **B** empties the LPP, then attempts to add a GPS measurement. This GPS measurement occupies 11 bytes and do can't fit inside the LPP buffer. The get-error node reports an \"overflow\" error.\n\n",
+      "id": "BkCinasw9",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 3
+      },
+      "size": {
+        "height": 3,
+        "units": "slots",
+        "width": 9
+      }
+    }
+  ],
+  "description": "Patch to show how overflow of the payload buffer can be detected using the get-error node. Run in debugger.",
+  "links": [
+    {
+      "id": "SkG8Rpjivq",
+      "input": {
+        "nodeId": "rkICasiv9",
+        "pinKey": "rydDt05vc"
+      },
+      "output": {
+        "nodeId": "S1gIApsivq",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "rkKJ0jjP5",
+      "input": {
+        "nodeId": "H1S10jiD9",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rkICasiv9",
+        "pinKey": "Bk6wOfdSq"
+      }
+    },
+    {
+      "id": "SJX7WAjiwc",
+      "input": {
+        "nodeId": "ByX-Cojwc",
+        "pinKey": "SkeW3-IYH9"
+      },
+      "output": {
+        "nodeId": "Bk-Q-Ciovc",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkspX2ovq",
+      "input": {
+        "nodeId": "B1vamhjD9",
+        "pinKey": "ryv7IRdSP1b"
+      },
+      "output": {
+        "nodeId": "H1jGRjov9",
+        "pinKey": "ryQP9oRtSc"
+      }
+    },
+    {
+      "id": "SJTp72oP5",
+      "input": {
+        "nodeId": "B1vamhjD9",
+        "pinKey": "ByU7LRuSPkW"
+      },
+      "output": {
+        "nodeId": "ByX-Cojwc",
+        "pinKey": "BySWnWItS5"
+      }
+    },
+    {
+      "id": "ry1kV2ovc",
+      "input": {
+        "nodeId": "HkMO7hsv9",
+        "pinKey": "HkZ_7QdY8c"
+      },
+      "output": {
+        "nodeId": "B1vamhjD9",
+        "pinKey": "ByHmL0uHPk-"
+      }
+    },
+    {
+      "id": "HksvVnjv9",
+      "input": {
+        "nodeId": "rJ6UNhiv5",
+        "pinKey": "H1ZEhWOt8q"
+      },
+      "output": {
+        "nodeId": "Hkejf0jjP9",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "HyAvEnsv9",
+      "input": {
+        "nodeId": "H1jGRjov9",
+        "pinKey": "HJMw9iCFBq"
+      },
+      "output": {
+        "nodeId": "rJ6UNhiv5",
+        "pinKey": "HkGE2Z_tL9"
+      }
+    },
+    {
+      "id": "Hkn_42iPq",
+      "input": {
+        "nodeId": "r1vdV2sP9",
+        "pinKey": "H1ZEhWOt8q"
+      },
+      "output": {
+        "nodeId": "BJl7WRssD5",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "Sya_NhsPq",
+      "input": {
+        "nodeId": "ByX-Cojwc",
+        "pinKey": "rkVW2bUFr5"
+      },
+      "output": {
+        "nodeId": "r1vdV2sP9",
+        "pinKey": "HkGE2Z_tL9"
+      }
+    },
+    {
+      "id": "B1KcN2iD9",
+      "input": {
+        "nodeId": "HkMO7hsv9",
+        "pinKey": "HkguQ7uK89"
+      },
+      "output": {
+        "nodeId": "HkWozAisw9",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryAh42sDq",
+      "input": {
+        "nodeId": "rJ6UNhiv5",
+        "pinKey": "rJlEnb_KU9"
+      },
+      "output": {
+        "nodeId": "SyO3Vnsw5",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1GaNniDc",
+      "input": {
+        "nodeId": "r1vdV2sP9",
+        "pinKey": "rJlEnb_KU9"
+      },
+      "output": {
+        "nodeId": "Bk-Q-Ciovc",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJvW86sPc",
+      "input": {
+        "nodeId": "H1jGRjov9",
+        "pinKey": "Skewqj0YH5"
+      },
+      "output": {
+        "nodeId": "SyO3Vnsw5",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1FIY6jvq",
+      "input": {
+        "nodeId": "S1QUYpjPc",
+        "pinKey": "SJ-BNy8s2G"
+      },
+      "output": {
+        "nodeId": "HkMO7hsv9",
+        "pinKey": "HJgkY6iwc"
+      }
+    },
+    {
+      "id": "SkS2t6oD5",
+      "input": {
+        "nodeId": "r15jKTsvq",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1QUYpjPc",
+        "pinKey": "r1ctYrM3G"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "Hy8yEvdS9": "20d",
+        "rydDt05vc": "11"
+      },
+      "id": "rkICasiv9",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "@/lpp"
+    },
+    {
+      "boundLiterals": {
+        "B1x2RV3eZ": "4"
+      },
+      "id": "S1gIApsivq",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/core/constant-number"
+    },
+    {
+      "id": "H1S10jiD9",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "boundLiterals": {
+        "Bk8-3ZLFHc": "01h",
+        "Hy-Z2ZLtBq": "42.3519",
+        "HyGbhWUFr5": "-87.9094",
+        "SyX-nbLFS5": "10"
+      },
+      "id": "ByX-Cojwc",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "type": "@/add-gps"
+    },
+    {
+      "id": "BJl7WRssD5",
+      "position": {
+        "units": "slots",
+        "x": 19,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "Bk-Q-Ciovc",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "Sk-DciCKrq": "224.56",
+        "SkNP9sRtH9": "03h"
+      },
+      "id": "H1jGRjov9",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "@/add-voltage"
+    },
+    {
+      "id": "Hkejf0jjP9",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "HkWozAisw9",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HkMO7hsv9",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "@/get-error"
+    },
+    {
+      "id": "B1vamhjD9",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/core/any"
+    },
+    {
+      "id": "rJ6UNhiv5",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "@/reset"
+    },
+    {
+      "id": "r1vdV2sP9",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 1
+      },
+      "type": "@/reset"
+    },
+    {
+      "id": "SyO3Vnsw5",
+      "label": "LPP",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "arityLevel": 2,
+      "boundLiterals": {
+        "BkrwKrGhG": "\"OK\"",
+        "HypuFHG3z": "\"Overflow\"",
+        "HypuFHG3z-$1": "\"Unknown\""
+      },
+      "id": "S1QUYpjPc",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "xod/core/nth-input"
+    },
+    {
+      "id": "r15jKTsvq",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

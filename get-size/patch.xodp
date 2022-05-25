@@ -1,5 +1,5 @@
 {
-  "description": "Get size of buffer.",
+  "description": "Get size of payload.",
   "nodes": [
     {
       "id": "S1yM3PKU5",
@@ -44,7 +44,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Size of payload.",
+      "description": "Size of payload (number of bytes).",
       "id": "HJCb_9jPq",
       "label": "Size",
       "position": {
